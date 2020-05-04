@@ -14,7 +14,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration;
+import org.springframework.cloud.task.configuration.EnableTask;
 
+@EnableTask
 @SpringBootApplication
 @EnableBatchProcessing
 @EnableAutoConfiguration(exclude={BatchAutoConfiguration.class})
